@@ -7,6 +7,9 @@ import sys
 import os
 import multiprocessing
 
+# Global variable
+convert_path = ""
+
 def WEBP2JPG(webp_img):
     filename = os.path.join(dir_path, webp_img)
     img = Image.open(filename)
